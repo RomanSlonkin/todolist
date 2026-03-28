@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: todolist
-  EKS_CLUSTER: todolist-cluster
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+  EKS_CLUSTER: ${{ secrets.EKS_CLUSTER }}
   NAMESPACE: staging
   HELM_RELEASE: todolist-staging
 
