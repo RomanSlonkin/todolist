@@ -16,6 +16,7 @@ jobs:
   build-and-deploy:
     name: Build, Push & Deploy (production)
     runs-on: ubuntu-latest
+    environment: production   # blocks until a reviewer approves
 
     steps:
       - name: Checkout code
